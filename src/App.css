@@ -18,3 +18,9 @@ body #root {
 .card {
   background-color: #1b1d27 !important;
 }
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+  width: 100vw;
+}
