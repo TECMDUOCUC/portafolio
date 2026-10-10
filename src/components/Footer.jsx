@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-
+import { Link } from 'react-router-dom';
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -55,12 +55,9 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a 
-                  href={`${import.meta.env.BASE_URL}linkedin`}
-                  className="footer-link"
-                >
+                <Link to="/linkedin" className="footer-link">
                   LinkedIn.
-                </a>
+                </Link>
               </li>
             </ul>
           </Col>

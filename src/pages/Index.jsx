@@ -8,7 +8,6 @@ import Footer from '/src/components/Footer';
 import NewsSection from "/src/components/News";
 import newsData from "/src/data/newsData.json";
 
-
 export default function Index() {
   return (
     <>
