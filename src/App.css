@@ -24,3 +24,52 @@ body #root {
   text-align: center;
   width: 100vw;
 }
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  background-color: #1e1e24;
+}
+
+.project-card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+  pointer-events: none;
+}
+
+.project-card-body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.footer-link {
+  color: #adb5bd;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-link:hover {
+  color: #0d6efd;
+}
+
+.footer-divider {
+  border-color: #2c3036;
+  opacity: 1;
+}
+
+.dance {
+  width: 80vh;
+  aspect-ratio: 1/1;
+}
+

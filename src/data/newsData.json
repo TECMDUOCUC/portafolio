@@ -1,0 +1,30 @@
+{
+  "principales": [
+    {
+      "id": 1,
+      "titulo": "Lanzamiento de la nueva versión de React",
+      "fecha": "2026-03-15",
+      "contenido": "Se anuncian nuevas mejoras de rendimiento y compilación para aplicaciones modernas."
+    },
+    {
+      "id": 2,
+      "titulo": "Avances en la adopción de Vite",
+      "fecha": "2026-03-10",
+      "contenido": "Vite se consolida como la herramienta estándar para el empaquetado de proyectos frontend."
+    }
+  ],
+  "tecnologia": [
+    {
+      "id": 3,
+      "titulo": "Nuevas tendencias en CSS y maquetación",
+      "fecha": "2026-02-28",
+      "contenido": "Las subcuadrículas y las consultas de contenedor transforman el diseño responsivo."
+    },
+    {
+      "id": 4,
+      "titulo": "Optimizaciones de rendimiento web",
+      "fecha": "2026-02-20",
+      "contenido": "Estrategias esenciales para reducir los tiempos de carga y mejorar Core Web Vitals."
+    }
+  ]
+}
