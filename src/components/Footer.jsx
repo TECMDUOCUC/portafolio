@@ -56,7 +56,7 @@ export default function Footer() {
               </li>
               <li>
                 <a 
-                  href="/linkedin" 
+                  href={`${import.meta.env.BASE_URL}linkedin`}
                   className="footer-link"
                 >
                   LinkedIn.

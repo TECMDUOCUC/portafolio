@@ -18,7 +18,7 @@ export default function Index() {
           className="my-4 text-center image-column"
         >
           <CircleImage
-            path="/profile.png"
+            path={`${import.meta.env.BASE_URL}profile.png`}
             text="Foto de perfil"
           />
           <h1 className="display-3 fw-bold">Tomás C.</h1>
@@ -34,7 +34,7 @@ export default function Index() {
             description="Un portafolio contruido en bootstrap, Node JS y Vite."
             buttonName="Github"
             buttonURI="https://github.com/TECMDUOCUC/portafolio"
-            imageSrc="/portafolio.png"
+            imageSrc={`${import.meta.env.BASE_URL}portafolio.png`}
           />
 
           <Project
@@ -42,7 +42,7 @@ export default function Index() {
             description="Una página web de e-commerce diseñada en HTML + CSS + JS para la venta de piedras."
             buttonName="Github"
             buttonURI="https://tecmduocuc.github.io/PIECA/"
-            imageSrc="/PIECA.png"
+            imageSrc={`${import.meta.env.BASE_URL}PIECA.png`}
           />
 
           <Project
@@ -50,7 +50,7 @@ export default function Index() {
             description="Una app de Android diseñada para la gestión de una junta de vecinos."
             buttonName="Github"
             buttonURI="https://github.com/naa-chi/Android-Development-Project"
-            imageSrc="/junta.png"
+            imageSrc={`${import.meta.env.BASE_URL}junta.png`}
           />
 
           <Project
@@ -58,7 +58,7 @@ export default function Index() {
             description="Un juego de ritmo hecho en Godot estilo beat-em-up"
             buttonName="Github"
             buttonURI="https://github.com/martinkuruzg-hue/Beats-Beats-Purgatory-v2"
-            imageSrc="/bbp.png"
+            imageSrc={`${import.meta.env.BASE_URL}bbp.png`}
           />
         </Row>
       </Container>
