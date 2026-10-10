@@ -24,6 +24,12 @@ Sitio web personal desarrollado como una aplicación de una sola página (SPA) c
 
 ---
 
+## Ejecución en navegador web
+
+1. Entrar al url [https://tecmduocuc.github.io/portafolio/](https://tecmduocuc.github.io/portafolio/)
+
+---
+
 ## Ejecución del Entorno de Desarrollo
 
 Para iniciar el servidor local de desarrollo con recarga en vivo (HMR):
