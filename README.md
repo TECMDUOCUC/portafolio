@@ -1,16 +1,67 @@
-# React + Vite
+# Portafolio Web - React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio web personal desarrollado como una aplicación de una sola página (SPA) con React, Vite y Bootstrap. Incluye enrutamiento con React Router, carga dinámica de contenido desde JSON y pruebas unitarias con Jasmine y Karma.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Requisitos Previos
 
-## React Compiler
+- **Node.js**: Versión 26 o superior.
+- **npm**: Versión 11 o superior.
+- **Navegador**: Microsoft Edge o Google Chrome (para ejecutar las pruebas unitarias headless).
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Instalación
 
-## Expanding the ESLint configuration
+1. Clonar el repositorio localmente:
+   git clone https://github.com/TECMDUOCUC/portafolio
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Ingresar al directorio del proyecto:
+   cd portafolio
+
+3. Instalar las dependencias del proyecto:
+   npm install
+
+---
+
+## Ejecución del Entorno de Desarrollo
+
+Para iniciar el servidor local de desarrollo con recarga en vivo (HMR):
+
+npm run dev
+
+El proyecto estará disponible por defecto en:
+http://localhost:5173/
+
+---
+
+## Compilación para Producción
+
+Para generar el bundle optimizado para despliegue:
+
+npm run build
+
+Para previsualizar la compilación localmente:
+
+npm run preview
+
+---
+
+## Ejecución de Pruebas Unitarias
+
+El proyecto utiliza Jasmine como framework de pruebas, Karma como ejecutor en navegadores headless, y esbuild para la transpilación de archivos JS.
+
+### 1. Ejecutar las pruebas una sola vez
+Ejecuta la suite completa y genera el reporte de cobertura de código:
+
+npm test
+
+### 2. Modo observación (Watch)
+Mantiene el proceso activo y vuelve a ejecutar las pruebas automáticamente tras detectar cambios en los archivos:
+
+npm run test:watch
+
+### 3. Reporte de Cobertura de Código
+Al ejecutar `npm test`, se genera un informe detallado de cobertura en la carpeta `coverage/`.
+Para revisarlo de forma gráfica, abra el archivo:
+coverage/html/index.html
