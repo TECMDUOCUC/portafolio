@@ -4,7 +4,7 @@ import Linkedin from "./pages/Linkedin";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portafolio">
       <Routes>
         <Route path="/" element={<Index/>} />
         <Route path="/linkedin" element={<Linkedin/>}/>
