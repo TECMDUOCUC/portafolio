@@ -7,6 +7,7 @@ import Project from '/src/components/Project';
 import Footer from '/src/components/Footer';
 import NewsSection from "/src/components/News";
 import newsData from "/src/data/newsData.json";
+import ContactForm from '../components/Form';
 
 export default function Index() {
   return (
@@ -77,6 +78,13 @@ export default function Index() {
           sectionTitle="Innovación y Tecnología"
           items={newsData.tecnologia}
         />
+      </Container>
+
+
+      <Container id="contact" className="my-5 text-white">
+      <h2 className='mb-4 text-center'>Contáctame</h2>
+
+      <ContactForm/>
       </Container>
 
       <Footer/>
