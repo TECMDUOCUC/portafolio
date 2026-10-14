@@ -11,15 +11,15 @@ module.exports = function (config) {
     frameworks: ['jasmine'],
 
     files: [
-      { pattern: 'src/**/*.spec.js', watched: false },
-      { pattern: 'src/**/*.spec.jsx', watched: false }
+      { pattern: 'src/**/*.spec.js', watched: false }
     ],
 
     plugins: [
       'karma-jasmine',
       'karma-chrome-launcher',
       'karma-esbuild',
-      'karma-coverage'
+      'karma-coverage',
+      'karma-mocha-reporter' // 1. Added plugin
     ],
 
     preprocessors: {
@@ -42,7 +42,15 @@ module.exports = function (config) {
       }
     },
 
-    reporters: ['progress', 'coverage'],
+    // 2. Swapped 'progress' for 'mocha'
+    reporters: ['mocha', 'coverage'],
+
+    // 3. Optional configuration for karma-mocha-reporter
+    mochaReporter: {
+      output: 'full',             // Shows all specs ('full', 'autofold', 'minimal', 'noFailures')
+      showDiff: true,             // Highlights string/object differences on failure
+      ignoreSkipped: false        // Shows skipped or pending tests
+    },
 
     coverageReporter: {
       dir: 'coverage/',

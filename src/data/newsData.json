@@ -11,6 +11,12 @@
       "titulo": "Avances en la adopción de Vite",
       "fecha": "2026-03-10",
       "contenido": "Vite se consolida como la herramienta estándar para el empaquetado de proyectos frontend."
+    },
+    {
+      "id": 5,
+      "titulo": "hola",
+      "fecha": "2026-03-10",
+      "contenido": "que tal"
     }
   ],
   "tecnologia": [
